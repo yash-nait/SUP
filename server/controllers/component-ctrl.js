@@ -1,4 +1,4 @@
-const Component = require('../model/component-model')
+const Component = require('../models/component-model')
 
 createComponent = (req, res) => {
   const body = req.body
@@ -10,7 +10,9 @@ createComponent = (req, res) => {
     })
   }
 
-  const component = new component(body)
+  const component = new Component(body)
+
+  console.log(body)
 
   if(!component){
     return res.status(400).json({
@@ -31,7 +33,7 @@ createComponent = (req, res) => {
     .catch((error)=>{
       return res.status(400).json({
         error,
-        message: 'Movie not created!',
+        message: 'Component not created!',
       })
     })
 }
@@ -44,9 +46,9 @@ deleteComponent = async(req,res) => {
     if(!component){
       return res
         .status(404)
-        .json({ success: false, error: `Movie not found` })
+        .json({ success: false, error: `Component not found` })
     }
-    return res.status(200).json({ success: true, data: movie })
+    return res.status(200).json({ success: true, data: component })
   }).catch(err => console.log(err))
 }
 
