@@ -1,0 +1,77 @@
+/* Regular 400 Bold 700 Black 900 */
+
+body{
+    background-color: #121212;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+h1{
+    font-size: 65px;
+    font-weight: 900; 
+}
+
+/* NAVBAR */
+
+.navbar-bkg{
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 10px 30px;
+}
+.navbar-text-style{
+    color:#996fcd;
+    display: inline;
+}
+.text-right{
+    float: right;
+}
+
+/* LANDING */
+
+.landing-bkg{
+    background-image: url(./logo512.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 512px;
+    padding: 30px 0 0 30px;
+}
+
+/* SEARCH BAR */
+
+.search_bar-bkg{
+    background-color: rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+.search_bar{
+    background-color: transparent;
+    /* border-radius: 5px 0 0 5px; */
+    border: solid 2px rgba(255, 255, 255, 0.15);
+    border-right: none;
+    color: #996fcd;
+    font-size: large;
+    height: 31px;
+    margin: 10px 0px 10px 10px;
+    padding: 0 0 0 10px;
+    width: 70%;
+}
+.search_bar:focus{
+    outline: solid 2px #996fcd;
+}
+
+.search_bttn{
+    background-color: transparent;
+    /* border-radius: 0 5px 5px 0 ; */
+    border: solid 2px rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: large;
+    height: 35px;
+    margin: 10px 10px 10px 0;
+}
+.search_bttn:hover{
+    outline: solid 2px #996fcd;
+}
