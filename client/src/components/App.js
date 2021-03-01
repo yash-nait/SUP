@@ -3,7 +3,7 @@ import Navbar from "./Navbar"
 import Landing from "./Landing"
 import SearchBar from "./SearchBar";
 import Card from "./Card";
-import AddButton from "./AddButton";
+import Add from "./Add";
 
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
         <Card />
         <Card />
       </div>
-      <AddButton />
+      <Add />
     </div>
   );
 }
