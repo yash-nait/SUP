@@ -25,7 +25,7 @@ function RenderAll(){
 
   return (
     <div>
-      <button onClick={allComps}>ALL</button>
+      <div className="render-all-button-div"><button onClick={allComps} className="render-all-button">All Components</button></div>
       {allComp.map(createReq)}
     </div>
   );

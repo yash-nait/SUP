@@ -2,9 +2,9 @@ import React from "react";
 import Navbar from "./Navbar"
 import Landing from "./Landing"
 import SearchBar from "./SearchBar";
-import Card from "./Card";
 import Add from "./Add";
-import RenderAll from "./RenderAll"
+import RenderAll from "./RenderAll";
+import PreRendered from "./PreRendered";
 
 function App() {
   return (
@@ -15,17 +15,11 @@ function App() {
         link=""
       />
       <Landing />
-      <SearchBar />
-      <div className="card-container">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+      <div className="heading">
+        <h1>Top Components</h1>
       </div>
+      <PreRendered />
+      <hr />
       <Add />
       <RenderAll />
     </div>

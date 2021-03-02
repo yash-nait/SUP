@@ -1,6 +1,6 @@
 import React from "react";
 
-function Card(){
+function Card2(){
     return(
         <div className="card-bkg">
             <div className="card-overlay">
@@ -16,4 +16,4 @@ function Card(){
     );
 }
 
-export default Card;
+export default Card2;
