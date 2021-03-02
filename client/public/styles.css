@@ -81,6 +81,12 @@ h1 {
   outline: solid 2px #996fcd;
 }
 
+/* HEADING  */
+
+.heading {
+  text-align: center;
+}
+
 /* CARDS */
 
 .card-container {
@@ -91,15 +97,17 @@ h1 {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.03);
   display: flex;
-  height: 600px;
+  /* height: 600px; */
   justify-content: center;
   margin: 50px auto;
+  padding: 1px;
   width: 90%;
 }
 
 .card-overlay {
   background-color: rgba(255, 255, 255, 0.08);
   height: 90%;
+  margin: 40px 0;
   width: 95%;
 }
 
@@ -131,6 +139,10 @@ h1 {
 
 .card-title {
   margin: 30px 20px 20px;
+}
+
+.component-bkg {
+  margin: 50px;
 }
 
 /* BUTTON */
@@ -182,7 +194,65 @@ h1 {
 
 /* REQUEST DIVISIONS */
 
-.req-bkg{
+.req-bkg {
   background-color: rgba(255, 255, 255, 0.03);
-  margin: 30px;
+  margin: 50px auto;
+  height: 199px;
+  padding: 1px 0;
+  width: 85%;
+}
+
+.req-content {
+  margin: 20px 40px;
+}
+
+.req-title {
+  color: #996fcd;
+  font-size: 42px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.req-detail {
+  font-size: 21px;
+  margin: 5px 0;
+}
+
+.req-link {
+  margin: 10px auto;
+  background-color: transparent;
+  border: 2px solid #996fcd;
+  color: #996fcd;
+  font-size: 16px;
+  height: 35px;
+  transition: all 0.5s;
+  width: 75px;
+}
+
+.req-link:hover {
+  background-color: #996fcd;
+  color: white;
+}
+
+/* RENDER ALL */
+
+.render-all-button-div {
+  text-align: center;
+}
+
+.render-all-button {
+  background-color: transparent;
+  border: 3px solid #996fcd;
+  color: #996fcd;
+  font-size: 20px;
+  font-weight: 700;
+  height: 60px;
+  margin: 0 0 50px 0;
+  transition: all 0.5s;
+  width: 200px;
+}
+
+.render-all-button:hover {
+  background-color: #996fcd;
+  color: white;
 }
